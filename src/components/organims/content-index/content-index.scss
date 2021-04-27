@@ -1,0 +1,77 @@
+@import '../../../styles/variables.scss';
+
+.o-content-index{
+    color:$white;
+
+    a{
+        color: gainsboro;
+    }
+    .o-content-index-secctiones{
+        padding: 10px 40px;
+        @include from($x-large){
+            padding: 5px 10px;
+        }
+ 
+    
+        .o-content-index-secctiones-section{
+
+            p{
+                margin: 10px 50px;
+                color:gainsboro;
+                @include from($x-large){
+                    margin: 5px 15px;
+                }
+            }
+
+            h3{
+                margin: 10px 50px;
+                color:gainsboro;
+                @include from($x-large){
+                    margin: 5px 15px;
+                }
+            }
+
+            .o-content-index-secctioones-section-subsection{
+                margin: 10px 60px;
+                @include from($x-large){
+                    margin: 5px 15px;
+                }
+            }
+        }
+    }
+
+    .o-content-index-comments{
+        padding: 10px 40px;
+        color: lightslategray;
+        @include from($x-large){
+            padding: 5px 15px;
+        }
+    }
+
+    .h1-cierre{
+        display: block;
+        font-size: 2em;
+        font-weight: bold;
+    }
+
+    .h2-cierre{
+        display: block;
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 10px 0px;
+        @include from($x-large){
+            // padding: 5px 5px;
+        }
+    }
+
+    .h3-cierre{
+        display: block;
+        font-size: 1.17em;
+        font-weight: bold;
+        margin: 10px 50px;
+        color:gainsboro;
+        @include from($x-large){
+            margin: 5px 15px;
+        }
+    }
+}

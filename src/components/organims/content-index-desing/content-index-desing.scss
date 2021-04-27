@@ -1,0 +1,169 @@
+@import '../../../styles/variables.scss';
+
+.o-content-index-desing{
+
+    padding: 0px 50px;
+    @include from($x-large){
+        padding: 0px;
+        font-size: large;
+    }
+
+    .o-content-index-desing-row{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        max-width: $x-large;
+        margin: 20px 0px;
+        @include from($x-large){
+            flex-direction: column;
+            margin: 0px 0px;
+
+        }
+    }
+
+
+    .o-content-index-desing-img-profile{
+        @include box;
+        padding: 0px;
+        width: 40%;
+        img{
+            width: 100%;
+            border-radius:20px;
+        }
+
+        @include from($x-large){
+            width: 100%;
+            padding: 0px;
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+    .o-content-index-desing-profile{
+        @include box;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .o-content-index-desing-experience{
+        @include box;
+        width: 36%;
+
+        &-content{
+            display: flex;
+            margin: 5px 0px;
+            flex-direction: row;
+        }
+
+        @include from($x-large){
+            // padding:0px;
+            width: 90%;
+            &-content{
+                padding:20px;
+                display: flex;
+                margin: 0px 0px;
+                flex-direction: row;
+            }
+        }
+    }
+
+    .o-content-index-desing-education{
+        @include box;
+        width: 100%;
+        height: auto !important;
+        
+        &-content{
+            margin: 5px 0px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        @include from($x-large){
+            width: 90%;
+            // padding: 0px;
+            &-content{
+                padding:20px;
+                display: flex;
+                margin: 0px 0px;
+                flex-direction: row;
+            }
+        }
+    }
+
+    .o-content-index-desing-skill{
+        @include box;
+        // min-width: 40%;
+        width: 45%;        
+
+        &-content{
+            margin: 5px 0px;
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            flex-wrap: wrap;
+
+            &-item{
+                width: 50%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+        }
+
+        @include from($x-large){
+            // padding: 0px;
+            width: 90%;
+            &-content{
+                padding:20px;
+                display: flex;
+                margin: 0px 0px;
+                flex-direction: row;
+            }
+        }
+    }
+
+    .o-content-index-desing-contact{
+        @include box;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        &-content{
+            margin: 5px 0px;
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            flex-wrap: wrap;
+
+          
+        }
+        &-link{
+            text-decoration: none;
+            color: gray;
+            margin: 0px 5px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        @include from($x-large){
+            // padding: 0px;
+            width: 90%;
+            flex-direction: column;
+            &-content{
+                padding:20px;
+                display: flex;
+                margin: 0px 0px;
+                flex-direction: row;
+            }
+
+            &-link{
+                margin: 10px 5px;
+            }
+        }
+    }
+}
